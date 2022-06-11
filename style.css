@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 15px;
+}
+
+main {
+    position: relative;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    max-height: 100vh;
+    max-width: 100%;
+}
+
+.rating-card {
+    background-color: hsl(215, 22%, 15%);
+    width: 28%;
+    margin: 10% auto 5%;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.star {
+    width: 40px;
+    height: 40px;
+    background-color: hsl(199, 24%, 18%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0 6%;
+}
+
+.star img {
+    margin: auto;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 4%;
+    font-weight: 700;
+}
+
+#feedback {
+    color: hsl(217, 12%, 63%);
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0 7%;
+}
+
+.rating-value button {
+    font-size: 15px;
+    font-weight: 400;
+    width: 45px;
+    height: 45px;
+    background-color: hsl(199, 24%, 18%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    color: hsl(217, 12%, 63%);
+}
+.rating-value button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rating-value button:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+#submit {
+    width: 100%;
+    border-radius: 25px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    padding: 3.5% 0;
+    border: none;
+    outline: none;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color:  hsl(25, 97%, 53%);
+    font-weight: 700;
+}
+
+.thanks-card {
+    background-color: hsl(215, 22%, 15%);
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    width: 28%;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: -1;
+    transform: scaleY(50%);
+}
+
+.selection {
+    margin: 5% auto 8%;
+    background-color: hsl(199, 24%, 18%);
+    padding: 2% 0;
+    width: 70%;
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+}
+
+.thankyou h2 {
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 5%;
+}
+
+.thankyou p {
+    color: hsl(217, 12%, 63%);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media (max-width: 426px) {
+    .rating-card {
+        width: 84%;
+        margin: 25% auto 10%;
+        padding: 4%;
+    }
+    .thanks-card {
+        width: 84%;
+        left: 8%;
+        top: 17%;
+        padding-top: 6%;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 769px) {
+    .rating-card {
+        width: 50%;
+        margin: 12% auto 5%;
+    }
+}
